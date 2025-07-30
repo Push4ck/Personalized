@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "audio-book"
+version = "0.1.0"
+description = "Convert PDF books to speech via CLI"
+authors = ["Pushkar <you@example.com>"]
+packages = [{ include = "audio_book" }]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+typer = "^0.12.3"
+PyPDF2 = "^3.0.1"
+pyttsx3 = "^2.90"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

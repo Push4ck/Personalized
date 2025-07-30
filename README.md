@@ -1,41 +1,110 @@
-# Personalized 🚀
+# 🚀 Personalized
 
-**Make Your Daily Life Easier with Python Projects!**
+**AI-Enhanced Python CLI Tools to Supercharge Your Daily Productivity**
 
-## About
+---
 
-Personalized is a comprehensive repository that aims to simplify and enhance your daily life with a collection of Python projects. These projects cover various functionalities such as Text to Speech, Book Reader, PDF Merger, Reminder, and more. As we continue to develop and add new projects, our goal is to provide you with convenient solutions to improve your productivity.
+## 📌 Overview
 
-## Python Projects Included 🐍
+**Personalized** is a curated collection of modular, command-line Python utilities designed to make your daily workflows smarter, faster, and more efficient. Each project in this repo is engineered for production readiness with clean code, proper structure, AI integration where useful, and intuitive CLI interfaces.
 
-1. **Text to Speech** 📢
-   Convert text into speech using Python's Text-to-Speech library.
+> Whether it's converting text to speech, merging PDFs, or setting reminders — this suite has you covered.
 
-2. **Book Reader** 📚
-   A Python script that reads books aloud, making reading a more immersive experience.
+---
 
-3. **PDF Merger** 📎
-   Merge multiple PDF files into a single PDF using Python.
+## 🧰 Tools Included
 
-4. **Reminder** ⏰
-   A handy reminder application built with Python to help you stay organized and never miss important events.
+| Tool                         | Description                                                                            |
+| ---------------------------- | -------------------------------------------------------------------------------------- |
+| 📢 Text to Speech (`tts`)    | Convert any string of text into speech with support for multiple languages via `gTTS`. |
+| 📚 Book Reader (`audiobook`) | Extract and read aloud content from PDFs using `pyttsx3` and `PyPDF2`.                 |
+| 📌 PDF Merger (`pdf-merger`) | Merge multiple PDF files into one with a clean CLI-based workflow.                     |
+| ⏰ Reminder (`reminder`)     | Set voice-enabled reminders with snooze and repeat intervals. Fully terminal-based.    |
 
-*Note: The above list provides an overview of the Python projects in this repository. For detailed instructions on how to use each project, please refer to the individual project folders.*
+> **AI-ready & CLI-first:** All tools are wrapped with `Typer` and support interactive usage or flags for automation.
 
-## How to Use 📖
+---
 
-Each project in this repository has its own folder with a README file providing instructions on how to set up and use the project. Simply navigate to the project you are interested in, and follow the step-by-step guide to get started.
+## 📦 Project Structure
 
-## Feedback and Contributions 🤝
+```
+Personalized/
+└── tools/
+    ├── TTS/
+    ├── AudioBook/
+    ├── PdfMerger/
+    └── Reminder/
+```
 
-We value feedback from our users, and your suggestions can help us improve the projects further. If you encounter any issues or have ideas for new features, please feel free to raise an issue or contribute to the project through pull requests.
+Each folder contains:
 
-## Stay Updated 📢
+- `cli.py` – Typer-based CLI entrypoint
+- `core.py` – Business logic
+- `README.md` – Usage documentation
+- `tests/` – Unit tests
+- `pyproject.toml` – Dependency and packaging config (Poetry)
 
-Follow us on social media and GitHub to stay updated with the latest developments and announcements regarding new projects and updates.
+---
 
-Thank you for exploring Personalized. We hope you find these Python projects useful in streamlining your daily tasks and making your life more efficient.
+## 🚀 Getting Started
 
---- 
+### 1. Clone the Repo
 
-*Note: This is an overview of the Personalized repository with a focus on Python projects related to Text to Speech, Book Reader, PDF Merger, Reminder, etc. For more details on each project, please refer to the individual project folders.*
+```bash
+git clone https://github.com/Push4ck/Personalized.git
+cd Personalized/tools/<tool-name>
+```
+
+### 2. Install Dependencies
+
+> We use **Poetry** for dependency management. It’s modern and keeps your builds reproducible.
+
+```bash
+poetry install
+```
+
+### 3. Run the Tool
+
+```bash
+poetry run python cli.py --help
+```
+
+For example, using the TTS tool:
+
+```bash
+poetry run python cli.py speak -t "Hello World" -p
+```
+
+---
+
+## 💡 Why Personalized?
+
+- ✅ Fully modular
+- ✅ CLI-first UX
+- ✅ Production-level folder structure
+- ✅ Tests included
+- ✅ AI integration ready
+- ✅ Easy to contribute
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome. Feel free to fork, open PRs, suggest features, or file issues. We follow standard contribution practices. Make sure to check the contributing guidelines in each tool’s folder if available.
+
+---
+
+## 🧐 What’s Coming Next?
+
+- GitHub Pages-powered documentation
+- Dockerized versions for quick execution
+- GitHub Actions CI for testing
+- AI-enhanced capabilities like voice detection, summarization, etc.
+
+---
+
+## 📬 Stay Connected
+
+Star ⭐ the repo to show support and stay updated on future improvements.
+
+> Built by [Push4ck](https://github.com/Push4ck) — designed to turn everyday Python scripts into professional-grade tools.
